@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand navTitle" href="#">Magic Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <form class="d-flex">
+                    <input id="searchText" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="seachbtn" class="btn btn-outline-success searchbutton" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h1>Welcome to Magic Notes</h1>
+        <hr>
+        <hr>
+        <div class="card inputnote">
+            <div class="card-body">
+                <h2 class="card-title mb-4">Add Your Note</h2>
+                <div class="form-group">
+                    <input class="form-control outline my-2" id="addtitle" type="text" placeholder="Title">
+                    <textarea class="form-control outline" id="addtext" rows="3" placeholder="Enter Your Note"></textarea>
+                    <h4 class="mb-4 mt-3">Choose Category</h4>
+                    <div class="category my-2">
+                        <input style="display: none;" class="mx-2" type="radio" name="categoryselect" checked
+                            id="generalselect" value="general"><label for="generalselect"
+                            style="color:white; background-color: #f0002f;">General</label>
+                        <input style="display: none;" class="mx-2" type="radio" name="categoryselect"
+                            id="personalselect" value="personal">
+                        <label for="personalselect" style="color: white; background-color: #2086f5;">Personal</label>
+                        <input style="display: none;" class="mx-2" type="radio" name="categoryselect"
+                            id="businessselect" value="business">
+                        <label for="businessselect" style="color: white; background-color: #7db10e;">Business</label>
+                        <input style="display: none;" class="mx-2" type="radio" name="categoryselect" id="familyselect"
+                            value="family"> <label for="familyselect"
+                            style="color: white; background-color: #800080;">Family</label>
+                    </div>
+                </div>
+                <button class="btn mt-4 addnotebtn" id="addbtn">Add Note</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div class="mx-4">
+            <h3>Choose Category</h3>
+            <hr>
+            <div class="category mx-3 mb-4 mt-3">
+                <input style="display: none;" class="mx-3" type="radio" name="categorydetect" id="alldetect" checked
+                    value="all"><label for="alldetect" style="color:white; background-color: #f0002f;">All</label>
+                <input style="display: none;" class="mx-3" type="radio" name="categorydetect" id="generaldetect"
+                    value="general"><label for="generaldetect"
+                    style="color: white; background-color: #FFA500;">General</label>
+                <input style="display: none;" class="mx-3" type="radio" name="categorydetect" id="personaldetect"
+                    value="personal"><label for="personaldetect"
+                    style="color: white; background-color: #2086f5;">Personal</label>
+                <input style="display: none;" class="mx-3" type="radio" name="categorydetect" id="businessdetect"
+                    value="business"><label for="businessdetect"
+                    style="color: white; background-color: #7db10e;">Business</label>
+                <input style="display: none;" class="mx-3" type="radio" name="categorydetect" id="familydetect"
+                    value="family"><label for="familydetect"
+                    style="color: white; background-color: #800080;">Family</label>
+            </div>
+            <div id="notes" class="row container-fluid"></div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/harshil-pethani" target="  "><img src="./images/linkedin.png" alt=""></a>
+            <a href="https://github.com/mrpethani" target="  "><img src="./images/github.png" alt=""></a>
+            <a href="https://instagram.com/_mr._.pethani_?igshid=1eqqgu6i4a5mu" target="  "><img src="./images/instagram.png" alt=""></a>
+            <a href="#" target="  "><img src="./images/twitter.png" alt=""></a>
+            <a href="https://facebook.com/harshil.pethani.73" target="  "><img src="./images/facebook.png" alt=""></a>
+        </div>
+        <div class="tagline">
+            Created With 💝 By Harshil Pethani
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
