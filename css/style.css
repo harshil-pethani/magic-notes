@@ -17,6 +17,10 @@ body {
   background-color: var(--black);
 }
 
+.navbar-light{
+  background-color: var(--yellow);
+}
+
 .navTitle {
   color: #ffc107;
   font-weight: 600;
